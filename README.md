@@ -1,4 +1,4 @@
-This is the script for SCP-914 from the map "SCP Site 09" made by Kiwonta.
+This is the script for SCP-914 from the gmod map "SCP Site 09" made by Kiwonta.
 
 
 
