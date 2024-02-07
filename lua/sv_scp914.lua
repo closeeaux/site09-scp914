@@ -1,4 +1,4 @@
-MG_SCP914 = {} -- Dont touch
+MG_SCP914 = MG_SCP914 || {} -- Dont touch
 MG_SCP914.Mode = "Rough"
 
 print("starting 914 script")
@@ -34,13 +34,13 @@ hook.Add("MG_SCP914_ProcessOutput", "SCP914outputthings", function(ply)
                     end 
             end
         else
-            weaponClass = v:GetWeaponClass()
+            local weaponClass = v:GetWeaponClass()
             if SCP914Out[weaponClass] != nil then
-                for key, value in pairs( SCP914Out[weaponClass]) do
-                    print(MG_SCP914.Mode)
-                        if key == MG_SCP914.Mode then
-                            timer.Simple(0.1, function()
-                                local entity = ents.Create( value )
+                for key, value in pairs(SCP914Out[weaponClass]) do
+                    if key == MG_SCP914.Mode then
+                        timer.Simple(0.1, function()
+                            local entity = ents.Create( value )
+                            if entity then
                                 entity:SetPos(v:GetPos())
                                 if entity:IsWeapon() then 
                                     entity:SetPos(Vector(2757.665039,-4321.473145,50.031250))
@@ -48,11 +48,12 @@ hook.Add("MG_SCP914_ProcessOutput", "SCP914outputthings", function(ply)
                                 else 
                                     entity:Spawn()
                                 end
-                                v:Remove()
-                                print("created " .. value .. " at " .. key)
-                            end)
-                        end
-                        
+                            end
+
+                            v:Remove()
+                            print("created " .. value .. " at " .. key)
+                        end)
+                    end 
                 end 
             end
         end 
