@@ -1,27 +1,29 @@
-This is the script for SCP-914 from the gmod map "SCP Site 09" made by Kiwonta.
+# SCP-914 Script for SCP Site 09
 
+This script is designed for the GMod map "SCP Site 09" created by Kiwonta.
 
+## Frequently Asked Questions
 
-Why aren't spawned weapons working?
+### Why aren't spawned weapons working?
 
-Only Entitys are working, that means only weapons are working, that were dropped via "/drop" command from darkRP.
+Currently, only entities are supported. This means that only weapons dropped via the "/drop" command from DarkRP will work.
 
+### Why isn't anything happening?
 
-Why isn't anything happening?
-currently it is just working for the guth scp keycards, when you want to add more weapons, you need to download the addon from my github and edit the config.
+The script is currently configured to work only with Guth SCP keycards. If you want to add more weapons, you'll need to download the addon from my GitHub and edit the config.
 
-How does the config work?
+### How does the config work?
 
-it is simple and you should understand it. If not ask for help in the comments and send a friend request, i will help you then.
+The configuration is straightforward. If you need help, feel free to ask in the comments or send a friend request.
 
-Do i need to restart the server, after changing something?
+### Do I need to restart the server after changing something?
 
-After editing the config everything should work fine. If not restart the Server. If there is still a problem and you aren't a developer, dont touch anything, just write a comment with the error and i will try to fix it.
+After editing the config, everything should work fine. If not, restart the server. If problems persist and you're not a developer, please leave a comment with the error, and I'll try to fix it.
 
+## License
 
+This script is under the CC0-1.0 license. Feel free to edit it as you wish, but please keep the credits inside the script and give credits if you reupload it.
 
-The script is under  CC0-1.0 license, fell free to edit it like you want, but please keep the credits inside of the script and give credits if you reupload it.
+## Contact
 
-If there are any problem contact me via steam.
-
-
+If you encounter any problems, please contact me via Steam.
